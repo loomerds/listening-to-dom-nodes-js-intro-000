@@ -1,5 +1,5 @@
 window.onload=function(){
-  var main = document.getElementById('main');
+  /*var main = document.getElementById('main');
   main.addEventListener('click', function(event) {
     alert('I was clicked!');
   });
@@ -31,9 +31,9 @@ window.onload=function(){
   for (let i = 0; i < divs.length; i++) {
     // set the third argument to `true`!
     divs[i].addEventListener('click', capture, true);
-  }
+  }*/
 
-  //const divs = document.querySelectorAll('div');
+  const divs = document.querySelectorAll('div');
 
   function bubble(e) {
     e.stopPropagation();
