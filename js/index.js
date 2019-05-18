@@ -32,4 +32,15 @@ window.onload=function(){
     // set the third argument to `true`!
     divs[i].addEventListener('click', capture, true);
   }
+
+  const divs = document.querySelectorAll('div');
+ 
+function bubble(e) {
+  e.stopPropagation();
+  console.log(this.firstChild.nodeValue.trim() + ' bubbled');
+}
+ 
+for (let i = 0; i < divs.length; i++) {
+    divs[i].addEventListener('click', bubble);
+  }
 }
