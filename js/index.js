@@ -1,5 +1,5 @@
 var main = document.getElementById('main');
-if {
+if(main) {
 main.addEventListener('click', function(event) {
   alert('I was clicked!');
 });
